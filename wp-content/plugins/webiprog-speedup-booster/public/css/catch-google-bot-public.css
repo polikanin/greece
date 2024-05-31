@@ -1,0 +1,8 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.toplevel_page_catch-google-bot-admin-opt .wp-menu-image img{
+    width: 20px;
+    height: 20px;
+}

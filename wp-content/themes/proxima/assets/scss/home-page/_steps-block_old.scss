@@ -1,0 +1,117 @@
+.vp-steps-block{
+  padding: 32px 0 100px 0;
+
+  .vp-title{
+    font-weight: 400;
+    font-size: 32px;
+    max-width: 600px;
+  }
+
+  .swiper{
+    margin-top: 46px;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid $line;
+    }
+  }
+
+  .vp-step-slide{
+    &--dot{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 auto 0 auto;
+      border: 1px solid transparent;
+      transition: 0.3s;
+      background: radial-gradient(circle, $gray 40%, rgba(0,0,0,0) 40%);
+    }
+
+    &--line{
+      width: 1px;
+      height: 24px;
+      margin: 0 auto;
+      transition: 0.3s;
+      background-color: $line;
+    }
+
+    &--index{
+      border: 1px solid $line;
+      border-radius: 47px;
+      padding: 8px 12px;
+      width: 43px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+      font-family: $second-family;
+      color: $white30;
+      transition: 0.3s;
+      margin: 0 auto 0 auto;
+    }
+
+    &--day{
+      font-weight: 300;
+      color: $white30;
+      text-align: center;
+      margin-top: 16px;
+      transition: 0.3s;
+    }
+
+    &--body{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+      margin-top: 24px;
+      transition: 0.3s;
+      opacity: 0;
+    }
+
+    &--block{
+      min-width: 425px;
+      max-width: 425px;
+      border-radius: 24px;
+      padding: 24px;
+      background-color: $black15;
+    }
+
+    &--title{
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    &--text{
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .swiper-slide-next{
+    .vp-step-slide{
+      &--dot{
+        border-color: $white30;
+      }
+
+      &--line{
+        height: 75px;
+      }
+
+      &--day,
+      &--index{
+        color: $white;
+      }
+
+      &--body{
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,557 @@
+[
+  {
+    "mask": "Pacific/Midway",
+    "value": "(GMT-11)",
+    "name": "Midway Island"
+  },
+  {
+    "mask": "US/Samoa",
+    "value": "(GMT-11)",
+    "name": "Samoa"
+  },
+  {
+    "mask": "US/Hawaii",
+    "value": "(GMT-10)",
+    "name": "Hawaii"
+  },
+  {
+    "mask": "US/Alaska",
+    "value": "(GMT-09)",
+    "name": "Alaska"
+  },
+  {
+    "mask": "US/Pacific",
+    "value": "(GMT-08)",
+    "name": "Pacific Time (US &amp; Canada)"
+  },
+  {
+    "mask": "America/Tijuana",
+    "value": "(GMT-08)",
+    "name": "Tijuana"
+  },
+  {
+    "mask": "US/Arizona",
+    "value": "(GMT-07)",
+    "name": "Arizona"
+  },
+  {
+    "mask": "US/Mountain",
+    "value": "(GMT-07)",
+    "name": "Mountain Time (US &amp; Canada)"
+  },
+  {
+    "mask": "America/Chihuahua",
+    "value": "(GMT-07)",
+    "name": "Chihuahua"
+  },
+  {
+    "mask": "America/Mazatlan",
+    "value": "(GMT-07)",
+    "name": "Mazatlan"
+  },
+  {
+    "mask": "America/Mexico_City",
+    "value": "(GMT-06)",
+    "name": "Mexico City"
+  },
+  {
+    "mask": "America/Monterrey",
+    "value": "(GMT-06)",
+    "name": "Monterrey"
+  },
+  {
+    "mask": "Canada/Saskatchewan",
+    "value": "(GMT-06)",
+    "name": "Saskatchewan"
+  },
+  {
+    "mask": "US/Central",
+    "value": "(GMT-06)",
+    "name": "Central Time (US &amp; Canada)"
+  },
+  {
+    "mask": "US/Eastern",
+    "value": "(GMT-05)",
+    "name": "Eastern Time (US &amp; Canada)"
+  },
+  {
+    "mask": "US/East-Indiana",
+    "value": "(GMT-05)",
+    "name": "Indiana (East)"
+  },
+  {
+    "mask": "America/Bogota",
+    "value": "(GMT-05)",
+    "name": "Bogota"
+  },
+  {
+    "mask": "America/Lima",
+    "value": "(GMT-05)",
+    "name": "Lima"
+  },
+  {
+    "mask": "America/Caracas",
+    "value": "(GMT-04)",
+    "name": "Caracas"
+  },
+  {
+    "mask": "Canada/Atlantic",
+    "value": "(GMT-04)",
+    "name": "Atlantic Time (Canada)"
+  },
+  {
+    "mask": "America/La_Paz",
+    "value": "(GMT-04)",
+    "name": "La_Paz"
+  },
+  {
+    "mask": "America/Santiago",
+    "value": "(GMT-04)",
+    "name": "Santiago"
+  },
+  {
+    "mask": "Canada/Newfoundland",
+    "value": "(GMT-03)",
+    "name": "Newfoundland"
+  },
+  {
+    "mask": "America/Buenos_Aires",
+    "value": "(GMT-03)",
+    "name": "Buenos Aires"
+  },
+  {
+    "mask": "Greenland",
+    "value": "(GMT-03)",
+    "name": "Greenland"
+  },
+  {
+    "mask": "Atlantic/Stanley",
+    "value": "(GMT-02)",
+    "name": "Stanley"
+  },
+  {
+    "mask": "Atlantic/Azores",
+    "value": "(GMT-01)",
+    "name": "Azores"
+  },
+  {
+    "mask": "Atlantic/Cape_Verde",
+    "value": "(GMT-01)",
+    "name": "Cape Verde Is."
+  },
+  {
+    "mask": "Africa/Casablanca",
+    "value": "(GMT)",
+    "name": "Casablanca"
+  },
+  {
+    "mask": "Europe/Dublin",
+    "value": "(GMT)",
+    "name": "Dublin"
+  },
+  {
+    "mask": "Europe/Lisbon",
+    "value": "(GMT)",
+    "name": "Libson"
+  },
+  {
+    "mask": "Europe/London",
+    "value": "(GMT)",
+    "name": "London"
+  },
+  {
+    "mask": "Africa/Monrovia",
+    "value": "(GMT)",
+    "name": "Monrovia"
+  },
+  {
+    "mask": "Europe/Amsterdam",
+    "value": "(GMT+01)",
+    "name": "Amsterdam"
+  },
+  {
+    "mask": "Europe/Belgrade",
+    "value": "(GMT+01)",
+    "name": "Belgrade"
+  },
+  {
+    "mask": "Europe/Berlin",
+    "value": "(GMT+01)",
+    "name": "Berlin"
+  },
+  {
+    "mask": "Europe/Bratislava",
+    "value": "(GMT+01)",
+    "name": "Bratislava"
+  },
+  {
+    "mask": "Europe/Brussels",
+    "value": "(GMT+01)",
+    "name": "Brussels"
+  },
+  {
+    "mask": "Europe/Budapest",
+    "value": "(GMT+01)",
+    "name": "Budapest"
+  },
+  {
+    "mask": "Europe/Copenhagen",
+    "value": "(GMT+01)",
+    "name": "Copenhagen"
+  },
+  {
+    "mask": "Europe/Ljubljana",
+    "value": "(GMT+01)",
+    "name": "Ljubljana"
+  },
+  {
+    "mask": "Europe/Madrid",
+    "value": "(GMT+01)",
+    "name": "Madrid"
+  },
+  {
+    "mask": "Europe/Paris",
+    "value": "(GMT+01)",
+    "name": "Paris"
+  },
+  {
+    "mask": "Europe/Prague",
+    "value": "(GMT+01)",
+    "name": "Prague"
+  },
+  {
+    "mask": "Europe/Rome",
+    "value": "(GMT+01)",
+    "name": "Rome"
+  },
+  {
+    "mask": "Europe/Sarajevo",
+    "value": "(GMT+01)",
+    "name": "Sarajevo"
+  },
+  {
+    "mask": "Europe/Skopje",
+    "value": "(GMT+01)",
+    "name": "Skopje"
+  },
+  {
+    "mask": "Europe/Stockholm",
+    "value": "(GMT+01)",
+    "name": "Stockholm"
+  },
+  {
+    "mask": "Europe/Vienna",
+    "value": "(GMT+01)",
+    "name": "Vienna"
+  },
+  {
+    "mask": "Europe/Warsaw",
+    "value": "(GMT+01)",
+    "name": "Warsaw"
+  },
+  {
+    "mask": "Europe/Zagreb",
+    "value": "(GMT+01)",
+    "name": "Zagreb"
+  },
+  {
+    "mask": "Europe/Athens",
+    "value": "(GMT+02)",
+    "name": "Athens"
+  },
+  {
+    "mask": "Europe/Bucharest",
+    "value": "(GMT+02)",
+    "name": "Bucharest"
+  },
+  {
+    "mask": "Africa/Cairo",
+    "value": "(GMT+02)",
+    "name": "Cairo"
+  },
+  {
+    "mask": "Africa/Harare",
+    "value": "(GMT+02)",
+    "name": "Harere"
+  },
+  {
+    "mask": "Europe/Helsinki",
+    "value": "(GMT+02)",
+    "name": "Helsinki"
+  },
+  {
+    "mask": "Europe/Istanbul",
+    "value": "(GMT+02)",
+    "name": "Istanbul"
+  },
+  {
+    "mask": "Asia/Jerusalem",
+    "value": "(GMT+02)",
+    "name": "Jerusalem"
+  },
+  {
+    "mask": "Europe/Kiev",
+    "value": "(GMT+02)",
+    "name": "Kiev"
+  },
+  {
+    "mask": "Europe/Minsk",
+    "value": "(GMT+02)",
+    "name": "Minsk"
+  },
+  {
+    "mask": "Europe/Riga",
+    "value": "(GMT+02)",
+    "name": "Riga"
+  },
+  {
+    "mask": "Europe/Sofia",
+    "value": "(GMT+02)",
+    "name": "Sofia"
+  },
+  {
+    "mask": "Europe/Tallinn",
+    "value": "(GMT+02)",
+    "name": "Tallinn"
+  },
+  {
+    "mask": "Europe/Vilnius",
+    "value": "(GMT+02)",
+    "name": "Vilnius"
+  },
+  {
+    "mask": "Asia/Baghdad",
+    "value": "(GMT+03)",
+    "name": "Baghdad"
+  },
+  {
+    "mask": "Asia/Kuwait",
+    "value": "(GMT+03)",
+    "name": "Kuwait"
+  },
+  {
+    "mask": "Africa/Nairobi",
+    "value": "(GMT+03)",
+    "name": "Nairobi"
+  },
+  {
+    "mask": "Asia/Riyadh",
+    "value": "(GMT+03)",
+    "name": "Riyadh"
+  },
+  {
+    "mask": "Asia/Tehran",
+    "value": "(GMT+03)",
+    "name": "Tehran"
+  },
+  {
+    "mask": "Europe/Moscow",
+    "value": "(GMT+04)",
+    "name": "Moscow"
+  },
+  {
+    "mask": "Asia/Baku",
+    "value": "(GMT+04)",
+    "name": "Baku"
+  },
+  {
+    "mask": "Europe/Volgograd",
+    "value": "(GMT+04)",
+    "name": "Volgograd"
+  },
+  {
+    "mask": "Asia/Muscat",
+    "value": "(GMT+04)",
+    "name": "Muscat"
+  },
+  {
+    "mask": "Asia/Tbilisi",
+    "value": "(GMT+04)",
+    "name": "Tbilisi"
+  },
+  {
+    "mask": "Asia/Yerevan",
+    "value": "(GMT+04)",
+    "name": "Yerevan"
+  },
+  {
+    "mask": "Asia/Kabul",
+    "value": "(GMT+04)",
+    "name": "Kabul"
+  },
+  {
+    "mask": "Asia/Karachi",
+    "value": "(GMT+05)",
+    "name": "Karachi"
+  },
+  {
+    "mask": "Asia/Tashkent",
+    "value": "(GMT+05)",
+    "name": "Tashkent"
+  },
+  {
+    "mask": "Asia/Kolkata",
+    "value": "(GMT+05)",
+    "name": "Kolkata"
+  },
+  {
+    "mask": "Asia/Yekaterinburg",
+    "value": "(GMT+06)",
+    "name": "Yekaterinburg"
+  },
+  {
+    "mask": "Asia/Almaty",
+    "value": "(GMT+06)",
+    "name": "Almaty"
+  },
+  {
+    "mask": "Asia/Dhaka",
+    "value": "(GMT+06)",
+    "name": "Dhaka"
+  },
+  {
+    "mask": "Asia/Novosibirsk",
+    "value": "(GMT+07)",
+    "name": "Novosibirsk"
+  },
+  {
+    "mask": "Asia/Bangkok",
+    "value": "(GMT+07)",
+    "name": "Bangkok"
+  },
+  {
+    "mask": "Asia/Jakarta",
+    "value": "(GMT+07)",
+    "name": "Jakarta"
+  },
+  {
+    "mask": "Asia/Krasnoyarsk",
+    "value": "(GMT+08)",
+    "name": "Krasnoyarsk"
+  },
+  {
+    "mask": "Asia/Chongqing",
+    "value": "(GMT+08)",
+    "name": "Chongqing"
+  },
+  {
+    "mask": "Asia/Hong_Kong",
+    "value": "(GMT+08)",
+    "name": "Hong Kong"
+  },
+  {
+    "mask": "Asia/Kuala_Lumpur",
+    "value": "(GMT+08)",
+    "name": "Kuala Lumpur"
+  },
+  {
+    "mask": "Australia/Perth",
+    "value": "(GMT+08)",
+    "name": "Perth"
+  },
+  {
+    "mask": "Asia/Singapore",
+    "value": "(GMT+08)",
+    "name": "Singapore"
+  },
+  {
+    "mask": "Asia/Taipei",
+    "value": "(GMT+08)",
+    "name": "Taipei"
+  },
+  {
+    "mask": "Asia/Ulaanbaatar",
+    "value": "(GMT+08)",
+    "name": "Ulaan Bataar"
+  },
+  {
+    "mask": "Asia/Urumqi",
+    "value": "(GMT+08)",
+    "name": "Urumqi"
+  },
+  {
+    "mask": "Asia/Irkutsk",
+    "value": "(GMT+09)",
+    "name": "Irkutsk"
+  },
+  {
+    "mask": "Asia/Seoul",
+    "value": "(GMT+09)",
+    "name": "Seoul"
+  },
+  {
+    "mask": "Asia/Tokyo",
+    "value": "(GMT+09)",
+    "name": "Tokyo"
+  },
+  {
+    "mask": "Australia/Adelaide",
+    "value": "(GMT+09)",
+    "name": "Adelaide"
+  },
+  {
+    "mask": "Australia/Darwin",
+    "value": "(GMT+09)",
+    "name": "Darwin"
+  },
+  {
+    "mask": "Asia/Yakutsk",
+    "value": "(GMT+10)",
+    "name": "Yakutsk"
+  },
+  {
+    "mask": "Australia/Brisbane",
+    "value": "(GMT+10)",
+    "name": "Brisbane"
+  },
+  {
+    "mask": "Australia/Canberra",
+    "value": "(GMT+10)",
+    "name": "Canberra"
+  },
+  {
+    "mask": "Pacific/Guam",
+    "value": "(GMT+10)",
+    "name": "Guam"
+  },
+  {
+    "mask": "Australia/Hobart",
+    "value": "(GMT+10)",
+    "name": "Hobart"
+  },
+  {
+    "mask": "Australia/Melbourne",
+    "value": "(GMT+10)",
+    "name": "Melbourne"
+  },
+  {
+    "mask": "Pacific/Port_Moresby",
+    "value": "(GMT+10)",
+    "name": "Port Moresby"
+  },
+  {
+    "mask": "Australia/Sydney",
+    "value": "(GMT+10)",
+    "name": "Sydney"
+  },
+  {
+    "mask": "Asia/Vladivostok",
+    "value": "(GMT+11)",
+    "name": "Vladivostok"
+  },
+  {
+    "mask": "Asia/Magadan",
+    "value": "(GMT+12)",
+    "name": "Magadan"
+  },
+  {
+    "mask": "Pacific/Auckland",
+    "value": "(GMT+12)",
+    "name": "Auckland"
+  },
+  {
+    "mask": "Pacific/Fiji",
+    "value": "(GMT+12)",
+    "name": "Fiji"
+  }
+]

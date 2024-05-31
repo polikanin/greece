@@ -1,0 +1,244 @@
+.vp-faq-block{
+  //padding: 80px 0 78px 0;
+  overflow: hidden;
+  padding: $main-offset 0;
+
+  @media(max-width: $width-sm){
+    padding: $main-sm-offset 0;
+  }
+
+  .vp-title{
+    margin-bottom: 32px;
+  }
+
+  .vp-text{
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .vp-items{
+    display: grid;
+    gap: 32px;
+    margin-top: 62px;
+  }
+
+  .vp-item{
+    $self: &;
+    border: 1px solid $line;
+    border-radius: 10px;
+    backdrop-filter: blur(15.5px);
+    background-color: $black15;
+    padding: 24px 32px;
+
+    @media(max-width: $width-sm){
+      padding: 12px;
+    }
+
+    .vp-accordion--head{
+      &.active{
+        .vp-item--icon{
+          svg{
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    &--head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      cursor: pointer;
+    }
+
+    &--title{
+      font-size: 24px;
+      color: $gold;
+
+      @media(max-width: $width-sm){
+        font-size: 18px;
+      }
+    }
+
+    &--icon{
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      padding: 12px;
+      border: 1px solid $line;
+      border-radius: 10px;
+      backdrop-filter: blur(15.5px);
+      background-color: $black15;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg{
+        transition: 0.3s;
+      }
+    }
+
+    &--body{
+      padding: 16px 0 8px 0;
+    }
+
+    &--text{
+      font-weight: 300;
+
+      h3{
+        font-weight: 400;
+        font-size: 24px;
+
+        @media(max-width: $width-sm){
+          font-size: 18px;
+        }
+
+        &:nth-of-type(2){
+          margin-top: 25px;
+        }
+      }
+
+      h4{
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin-top: 16px;
+        padding-left: 25px;
+        position: relative;
+
+        @media(max-width: $width-sm){
+          font-size: 14px;
+        }
+
+        &>strong{
+          font-size: 24px;
+
+          @media(max-width: $width-sm){
+            font-size: 14px;
+          }
+        }
+
+        &>em{
+          font-weight: 300;
+          font-size: 16px;
+          font-style: normal;
+          color: $white30;
+
+          @media(max-width: $width-sm){
+            font-size: 14px;
+          }
+        }
+
+        &:before{
+          content: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.48437 0.707108L16.2626 8.48528L8.48438 16.2634L0.706202 8.48528L8.48437 0.707108Z' fill='%23121212' stroke='%23292929' /%3E%3Cpath d='M8.48437 3.55664L13.4341 8.50639L8.48437 13.4561L3.53463 8.50639L8.48437 3.55664Z' fill='%23E9A900' /%3E%3C/svg%3E");
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &+ul+p, &+ul+ul+p, &+ul+ul+ul+p{
+          margin-top: 8px;
+          padding: 0 0 0 50px;
+
+          strong, b{
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.5);
+
+            em{
+              font-style: normal;
+              color: $gold;
+            }
+          }
+        }
+
+        &+ul, &+ul+ul, &+ul+ul+ul{
+          margin-top: 8px;
+          padding: 0 0 0 50px;
+        }
+
+        &+ul+ul, &+ul+ul+ul{
+          margin-top: 16px;
+        }
+
+        &+p, &+p+p, &+p+p+p{
+          margin-top: 8px;
+          padding: 0 0 0 25px;
+        }
+
+        &+p+ul{
+          margin-top: 8px;
+          padding: 0 0 0 50px;
+        }
+      }
+
+      p{
+        margin-top: 16px;
+
+        em{
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          color: $white30;
+        }
+      }
+
+      blockquote{
+        backdrop-filter: blur(15.5px);
+        background: $black15;
+        border: 1px solid $secondary;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 12px;
+        margin: 30px 0 0 0;
+
+        strong{
+          color: $gold;
+          font-weight: 300;
+        }
+
+        p{
+          margin: 0 0 0 0;
+          color: $white30;
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+
+      ul{
+        margin-top: 16px;
+        padding: 0 0 0 23px;
+
+        li{
+          font-weight: 300;
+          font-size: 16px;
+          position: relative;
+
+          @media(max-width: $width-sm){
+            font-size: 14px;
+          }
+
+          strong, b{
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.5);
+          }
+
+          &:before{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -15px;
+            width: 4px;
+            height: 4px;
+            background-color: $white;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      strong, b{
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.vp-badge{
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  fill: $black15;
+  border: 1px solid $line;
+  backdrop-filter: blur(15.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+
+  &.badge-options-block{
+    transform: translate(-50%, -50%);
+  }
+
+  &.badge-x3-slider-block{
+    transform: translate(-32px, 128px);
+  }
+
+  &.active{
+    opacity: 1;
+  }
+}
+
+[data-badge-slide]{
+  *{
+    pointer-events: none;
+  }
+}

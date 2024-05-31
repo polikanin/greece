@@ -1,0 +1,220 @@
+.vp-btn{
+  $self: &;
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+
+  &--inner{
+    font-family: $second-family;
+    border: 1px solid $gold;
+    border-radius: 2px;
+    height: 48px;
+    padding: 0 24px;
+    max-width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: $gold20;
+    font-weight: 300;
+    font-size: 16px;
+    color: $yellow;
+    text-align: center;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: $width-minlg){
+      font-size: 14px;
+    }
+
+    @media(max-width: $width-sm){
+      padding: 0 12px;
+    }
+
+    &[disabled]{
+      background-color: rgba(255, 255, 255, 0.05)!important;
+      border-color: $white30!important;
+      color: $white30!important;
+      cursor: not-allowed;
+    }
+  }
+
+  &--up{
+
+  }
+
+  &--down{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .vp-icon{
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &:hover{
+    #{$self}--down{
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &:active{
+    #{$self}--down{
+      color: $black;
+      background-color: $gold;
+    }
+  }
+}
+
+.vp-btn--text{
+  //margin-top: 1px;
+}
+
+a.vp-btn{
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vp-btn--simple{
+  $self: &;
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+
+  &--inner{
+    font-family: $font-family;
+    border-radius: 2px;
+    padding: 0 24px;
+    height: 48px;
+    max-width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: $secondary;
+    font-weight: 300;
+    font-size: 16px;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media(max-width: $width-minlg){
+      font-size: 14px;
+    }
+
+    @media(max-width: $width-sm){
+      padding: 0 12px;
+    }
+  }
+
+  .vp-icon{
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--up{
+
+  }
+
+  &--down{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    //text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:hover{
+    #{$self}--up{
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    #{$self}--down{
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &:active{
+    #{$self}--inner{
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+
+a.vp-btn--simple{
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vp-mail-link{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  padding: 12px 24px;
+  height: 48px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: fit-content;
+  max-width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  color: $white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: block;
+
+  @media(max-width: $width-sm){
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .vp-icon{
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+
+    @media(max-width: $width-sm){
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+    }
+
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

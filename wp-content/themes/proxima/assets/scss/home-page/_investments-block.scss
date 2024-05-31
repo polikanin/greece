@@ -1,0 +1,228 @@
+.vp-investments-block{
+  //padding: 92px 0 100px 0;
+  overflow: hidden;
+  padding: $main-offset 0;
+
+  @media(max-width: $width-sm){
+    padding: $main-sm-offset 0;
+  }
+
+  @media(max-width: $width-minlg){
+    br{
+      display: none;
+    }
+  }
+
+  .vp-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+
+    @media(max-width: $width-md){
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 48px;
+    }
+  }
+
+  .vp-item{
+    $self: &;
+    border: 1px solid $line;
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(15.5px);
+    background-color: $black15;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media(max-width: $width-sm){
+      padding: 20px;
+      position: relative;
+    }
+
+    &--index{
+      border: 1px solid $line;
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      backdrop-filter: blur(15.5px);
+      background-color: $black15;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 0 5px auto;
+
+      @media(max-width: $width-sm){
+        margin: 0 0 0 0;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      span{
+        display: block;
+        border-radius: 50%;
+        background-color: $gold;
+        width: 8px;
+        height: 8px;
+        margin: 2px;
+
+        @media(max-width: $width-sm){
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+
+    &--title{
+      font-weight: 400;
+      font-size: 48px;
+      align-self: flex-end;
+
+      @media(max-width: $width-minlg){
+        font-size: 24px;
+      }
+
+      @media(max-width: $width-sm){
+        padding: 0 0 0 64px;
+        min-height: 48px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+    }
+
+    &--text{
+      font-weight: 300;
+      font-size: 18px;
+      display: flex;
+      align-items: flex-end;
+      height: calc(18px * 1.185 * 6);
+
+      @media(max-width: $width-minlg){
+        font-size: 16px;
+      }
+
+      @media(max-width: $width-sm){
+        height: auto;
+        margin-bottom: 6px;
+      }
+    }
+
+    &--list{
+      &-item{
+        font-weight: 300;
+        color: $white30;
+        margin: 14px 0;
+
+        @media(max-width: $width-minlg){
+          font-size: 14px;
+        }
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        &:before{
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 4px;
+          height: 4px;
+          background-color: $white30;
+          border-radius: 50%;
+          margin: 0 0 0 0;
+        }
+      }
+    }
+
+    &--quote{
+      border: 1px solid $line;
+      border-radius: 10px;
+      padding: 10px 14px;
+      background-color: $black15;
+      font-weight: 300;
+      color: $white30;
+      margin-top: 19px;
+
+      @media(max-width: $width-sm){
+        font-size: 14px;
+        margin-top: 16px;
+      }
+    }
+
+    &--container{
+      display: grid;
+      grid-template-columns: 62% 38%;
+
+      @media(max-width: $width-sm){
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &--block{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    &--left{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      padding-right: 30px;
+
+      @media(max-width: $width-sm){
+        display: block;
+        padding: 0 0 0 0;
+      }
+    }
+
+    &--right{
+      display: grid;
+      grid-template-rows: 60px 1fr;
+
+      @media(max-width: $width-sm){
+        display: block;
+      }
+    }
+
+    &--btn{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:nth-of-type(4){
+      .vp-item--index{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        padding: 16px;
+      }
+    }
+
+    &:nth-of-type(5){
+      .vp-item--index{
+        align-content: center;
+
+        span{
+          &:first-child{
+            margin: 2px 20px;
+          }
+
+          &:last-child{
+            margin: 2px 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.vp-menu{
+  .menu{
+    color: $white;
+
+    &-item{
+      font-weight: 300;
+
+      a{
+        transition: 0.3s;
+
+        &:hover{
+          color: $gold;
+        }
+      }
+
+      &-has-children{
+        position: relative;
+
+        & > a{
+          &:after{
+            content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6L8 10L12 6' stroke='white' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+            position: relative;
+            top: 3px;
+            margin: 0 0 0 4px;
+            display: inline-block;
+            vertical-align: top;
+            transition: 0.3s;
+          }
+        }
+
+        &:hover{
+          & > a{
+            &:after{
+              top: -2px;
+              transform: rotate(180deg);
+            }
+          }
+
+          .sub-menu{
+            display: block;
+          }
+        }
+      }
+
+      .sub-menu{
+        position: absolute;
+        top: calc(100% + 10px);
+        width: 205px;
+        left: 0;
+        backdrop-filter: blur(44px);
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid $white30;
+        border-radius: 10px;
+        padding: 12px 20px;
+        display: none;
+        z-index: 1;
+
+        &:before{
+          content: '';
+          position: absolute;
+          width: 100%;
+          bottom: 100%;
+          left: 0;
+          height: 11px;
+        }
+
+        .menu-item{
+          padding: 8px 0;
+
+          a{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &--second{
+    position: absolute;
+    top: calc(100% + 50px);
+    right: 15px;
+  }
+}

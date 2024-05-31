@@ -1,0 +1,12 @@
+[31-May-2024 17:22:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Rlink\Proxima\acf_add_local_field_group() in C:\OpenServer\domains\greece\wp-content\themes\proxima\src\InitACF.php:63
+Stack trace:
+#0 C:\OpenServer\domains\greece\wp-content\themes\proxima\functions.php(19): Rlink\Proxima\InitACF->init()
+#1 C:\OpenServer\domains\greece\wp-settings.php(663): include('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\greece\wp-config.php(104): require_once('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\greece\wp-load.php(50): require_once('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\greece\wp-admin\admin.php(34): require_once('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\greece\wp-admin\plugins.php(10): require_once('C:\\OpenServer\\d...')
+#6 {main}
+  thrown in C:\OpenServer\domains\greece\wp-content\themes\proxima\src\InitACF.php on line 63
+[31-May-2024 17:22:28 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\OpenServer\domains\greece\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[31-May-2024 17:22:28 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\OpenServer\domains\greece\wp-includes\class-wp-recovery-mode-email-service.php on line 368

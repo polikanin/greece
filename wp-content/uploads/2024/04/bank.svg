@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <path d="M33 28.5V33H3V28.5C3 27.675 3.675 27 4.5 27H31.5C32.325 27 33 27.675 33 28.5Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M10.5 16.5H7.5V27H10.5V16.5Z" fill="currentColor"></path>
+  <path d="M16.5 16.5H13.5V27H16.5V16.5Z" fill="currentColor"></path>
+  <path d="M22.5 16.5H19.5V27H22.5V16.5Z" fill="currentColor"></path>
+  <path d="M28.5 16.5H25.5V27H28.5V16.5Z" fill="currentColor"></path>
+  <path d="M34.5 34.125H1.5C0.885 34.125 0.375 33.615 0.375 33C0.375 32.385 0.885 31.875 1.5 31.875H34.5C35.115 31.875 35.625 32.385 35.625 33C35.625 33.615 35.115 34.125 34.5 34.125Z" fill="currentColor"></path>
+  <path d="M32.055 8.62477L18.555 3.22477C18.255 3.10477 17.745 3.10477 17.445 3.22477L3.945 8.62477C3.42 8.83477 3 9.44977 3 10.0198V14.9998C3 15.8248 3.675 16.4998 4.5 16.4998H31.5C32.325 16.4998 33 15.8248 33 14.9998V10.0198C33 9.44977 32.58 8.83477 32.055 8.62477ZM18 12.7498C16.755 12.7498 15.75 11.7448 15.75 10.4998C15.75 9.25477 16.755 8.24977 18 8.24977C19.245 8.24977 20.25 9.25477 20.25 10.4998C20.25 11.7448 19.245 12.7498 18 12.7498Z" fill="currentColor"></path>
+</svg>

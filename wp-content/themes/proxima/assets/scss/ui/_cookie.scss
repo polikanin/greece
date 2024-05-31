@@ -1,0 +1,77 @@
+#cookie-notice{
+  pointer-events: none;
+}
+
+.cookie-notice{
+  &-container{
+    max-width: 560px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: left;
+    margin: 0 0 32px 64px;
+    font-family: $font-family;
+    pointer-events: auto;
+
+    @media(max-width: $width-md){
+      margin: 20px;
+    }
+
+    @media(max-width: $width-sm){
+      margin: 0px;
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  &-title{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  &-text{
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &-footer{
+    margin-top: 30px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &-more{
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    color: $gold;
+    margin: 0 auto 0 0;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.cookies-set{
+  #cookie-notice{
+    display: none!important;
+  }
+}
+
+body{
+  .cky-consent-container .cky-consent-bar{
+    box-shadow: none;
+    border-radius: 10px;
+  }
+
+  button.cky-show-desc-btn:not(:hover):not(:active),
+  button.cky-show-desc-btn:hover:not(:active),
+  button.cky-show-desc-btn:hover:active,
+  button.cky-show-desc-btn:hover,
+  .cky-accordion-header .cky-always-active{
+    color: $gold!important;
+  }
+}

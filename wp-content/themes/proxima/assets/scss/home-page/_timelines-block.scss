@@ -1,0 +1,151 @@
+.vp-timelines-block{
+  overflow: hidden;
+
+  .vp-text{
+    margin-top: 32px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .vp-table{
+    display: grid;
+    gap: 100px;
+    margin: 50px 0 0 0;
+
+    &--row{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &-inner{
+        display: grid;
+        grid-template-columns: max(450px) max(330px) 1fr;
+        padding: 32px 0;
+
+        @media(max-width: $width-minlg){
+          grid-template-columns: max(250px) max(330px) 1fr;
+        }
+      }
+    }
+
+    &--head{
+      &-inner{
+        display: grid;
+        grid-template-columns: max(450px) max(330px) 1fr;
+
+        @media(max-width: $width-minlg){
+          grid-template-columns: max(250px) max(330px) 1fr;
+        }
+      }
+    }
+
+    &--col{
+      display: grid;
+
+      &:nth-child(2){
+        padding-right: 20px;
+      }
+    }
+
+    &--heading{
+      font-size: 32px;
+      color: $gold;
+    }
+
+    &--index{
+      font-size: 24px;
+      color: $gold;
+    }
+
+    &--title{
+      font-size: 24px;
+    }
+
+    &--text{
+      font-weight: 300;
+      font-size: 16px;
+      display: grid;
+      gap: 24px;
+
+      p{
+        margin: 0 0 0 0;
+      }
+    }
+
+    &--quote{
+      font-weight: 300;
+      font-size: 16px;
+      color: $white30;
+      margin: auto 0 0 0;
+    }
+  }
+}
+
+@media(max-width: $width-md){
+  br{
+    display: none;
+  }
+
+  .vp-timelines-block{
+    .vp-text{
+      margin-top: 16px;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    .vp-table{
+      gap: 40px;
+      margin: 32px 0 0 0;
+
+      &--head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+
+      &--heading{
+        font-size: 24px;
+      }
+
+      &--index{
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      &--group{
+        padding: 24px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      &--box{
+        backdrop-filter: blur(15.5px);
+        background-color: $black15;
+        border: 1px solid $line;
+        border-radius: 10px;
+        padding: 16px 12px;
+        margin-top: 16px;
+
+        &-head{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 16px;
+        }
+      }
+
+      &--title{
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      &--text{
+        font-size: 14px;
+        gap: 16px;
+      }
+
+      &--quote{
+        font-size: 14px;
+      }
+    }
+  }
+}

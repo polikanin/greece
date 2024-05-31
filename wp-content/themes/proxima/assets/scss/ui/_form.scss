@@ -1,0 +1,157 @@
+.vp-form{
+  //padding: 80px 0 80px 0;
+  padding: 50px 0;
+
+  @media(max-width: $width-md){
+    padding: 40px 0 80px 0;
+  }
+
+  &--inner{
+    margin: 0 auto;
+    max-width: calc(100% - 60px);
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 24px;
+
+    @media(max-width: $width-md){
+      max-width: none;
+    }
+
+    @media(max-width: $width-sm){
+      padding: 16px 12px;
+    }
+  }
+
+  &--title{
+    font-size: 24px;
+    margin-bottom: 8px;
+
+    @media(max-width: $width-sm){
+      font-size: 18px;
+    }
+  }
+
+  &--subtitle{
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 16px;
+
+    @media(max-width: $width-sm){
+      font-size: 14px;
+    }
+  }
+
+  &--grid{
+    &-2x{
+      display: flex;
+      gap: 8px;
+    }
+
+    &-4x{
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+
+      @media(max-width: $width-md){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media(max-width: $width-sm){
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &--container{
+    width: 100%;
+    display: grid;
+    gap: 16px;
+
+    @media(max-width: $width-sm){
+      gap: 12px;
+    }
+  }
+
+  &--img{
+    border-radius: 10px;
+    height: 206px;
+    width: 100%;
+    overflow: hidden;
+    max-width: 500px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &--group{
+    display: flex;
+    gap: 8px;
+
+    @media(max-width: $width-sm){
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+
+  &--block{
+    width: 100%;
+  }
+
+  &--box{
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid $white30;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    transition: 0.3s;
+
+    &-error{
+      border-color: $error;
+    }
+
+    &-title{
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 4px;
+
+      span{
+        display: block;
+        color: $white30;
+      }
+    }
+  }
+
+  &--terms{
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 32px;
+
+    @media(max-width: $width-sm){
+      margin-top: 16px;
+    }
+
+    a{
+      font-weight: 400;
+      color: $gold;
+    }
+  }
+
+  &--ctrl{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+
+    @media(max-width: $width-sm){
+      margin-top: 32px;
+    }
+  }
+}

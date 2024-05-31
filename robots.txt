@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /hello-world/
+Disallow: /category/uncategorized/
+Disallow: /author/admin/
+
+Sitemap: https://advisorsportugal.com/sitemap.xml

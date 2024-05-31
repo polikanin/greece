@@ -1,0 +1,66 @@
+.vp-fees-block{
+  //padding: 30px 0 100px 0;
+  overflow: hidden;
+  padding: $main-offset 0;
+
+  @media(max-width: $width-sm){
+    padding: $main-sm-offset 0;
+  }
+
+  .vp-title{
+    margin-bottom: 32px;
+  }
+
+  .vp-text{
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .vp-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+
+    @media(max-width: $width-md){
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    @media(max-width: $width-sm){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: $width-maxsm){
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .vp-item{
+    $self: &;
+    border: 1px solid $line;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(15.5px);
+    background-color: $black15;
+
+    &--title{
+      color: $gold;
+      font-size: 48px;
+      margin-bottom: 12px;
+
+      @media(max-width: $width-md){
+        font-size: 32px;
+      }
+    }
+
+    &--text{
+      font-weight: 300;
+      font-size: 16px;
+
+      @media(max-width: $width-md){
+        font-size: 14px;
+      }
+    }
+  }
+}

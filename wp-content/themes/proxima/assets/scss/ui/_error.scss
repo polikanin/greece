@@ -1,0 +1,12 @@
+.vp-error{
+  &--msg{
+    color: $error;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 4px 15px;
+  }
+}
+
+.vp-disabled{
+  opacity: 0.5;
+}

@@ -1,0 +1,46 @@
+.vp-input{
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  height: 58px;
+  padding: 0 16px;
+  font-weight: 300;
+  font-size: 16px;
+  color: $white30;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+
+  @media(max-width: $width-sm){
+    font-size: 14px;
+    height: 44px;
+  }
+
+  &:hover{
+    border-color: $white30;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  &:focus{
+    color: $white;
+    border-color: $white;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  &--group{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    gap: 8px;
+
+    @media(max-width: $width-sm){
+      grid-template-columns: 100px 1fr;
+    }
+  }
+
+  &--error{
+    background-color: rgba(232, 48, 48, 0.05)!important;
+    border-color: $error!important;
+    color: $error!important;
+  }
+}

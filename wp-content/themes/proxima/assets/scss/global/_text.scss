@@ -1,0 +1,38 @@
+.vp-title{
+  font-weight: 400;
+  font-size: 50px;
+  color: $white;
+
+  @media(max-width: $width-minlg){
+    font-size: 32px;
+  }
+}
+
+#bs-creation{
+  .vp-title{
+    @media(max-width: $width-minlg){
+      font-size: 28px;
+    }
+  }
+}
+
+.vp-subtitle{
+  font-weight: 400;
+  font-size: 32px;
+  color: $white;
+
+  @media(max-width: $width-minlg){
+    font-size: 18px;
+  }
+}
+
+.vp-text{
+  font-weight: 300;
+  color: $white;
+}
+
+.vp-text-lg{
+  font-weight: 300;
+  font-size: 18px;
+  color: $white;
+}

@@ -1,0 +1,116 @@
+.vp-successful-block{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //padding: 65px 0 1px 0;
+  overflow: hidden;
+  $offset: 16px;
+  padding: $main-offset 0;
+
+  @media(max-width: $width-sm){
+    padding: $main-sm-offset 0;
+  }
+
+  &--head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media(max-width: $width-minlg){
+      display: block;
+    }
+
+    .vp-title{
+      font-family: $third-family;
+
+      @media(max-width: $width-sm){
+        br{
+          display: none;
+        }
+      }
+    }
+
+    .vp-text{
+      font-weight: 300;
+      font-size: 18px;
+      margin: 0 275px 0 0;
+
+      @media(max-width: $width-minlg){
+        margin: 32px 0 0 0;
+
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .vp-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 62px;
+    margin-left: -$offset;
+    margin-right: -$offset;
+
+    @media(max-width: $width-md){
+      margin: 0 0 0 0;
+      display: block;
+    }
+  }
+
+  .vp-item{
+    padding: 64px $offset 64px $offset;
+
+    @media(max-width: $width-md){
+      padding: 24px 0;
+    }
+
+    &:not(:first-child){
+      border-left: 1px solid $white30;
+
+      @media(max-width: $width-md){
+        border-left: none;
+        border-top: 1px solid $white30;
+      }
+    }
+
+    &--inner{
+      border: 1px solid $secondary;
+      border-radius: 10px;
+      backdrop-filter: blur(15.5px);
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 20px 20px 20px 20px;
+    }
+
+    &--title{
+      font-weight: 400;
+      font-size: 48px;
+      margin-bottom: 13px;
+
+      @media(max-width: $width-md){
+        font-size: 32px;
+      }
+    }
+
+    &--text{
+      font-weight: 300;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &--dots{
+      display: flex;
+      gap: 4px;
+
+      span{
+        width: 8px;
+        min-width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $white;
+      }
+    }
+  }
+}

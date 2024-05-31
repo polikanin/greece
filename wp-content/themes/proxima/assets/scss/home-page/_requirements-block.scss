@@ -1,0 +1,195 @@
+.vp-requirements-block{
+  //padding: 60px 0 70px 0;
+  overflow: hidden;
+  padding: $main-offset 0;
+
+  @media(max-width: $width-sm){
+    padding: $main-sm-offset 0;
+  }
+
+  &--grid{
+    display: grid;
+    grid-template-columns: max(530px) 1fr;
+    margin-top: 20px;
+
+    @media(max-width: $width-minlg){
+      grid-template-columns: 400px 1fr;
+    }
+
+    @media(max-width: $width-md){
+      grid-template-columns: 1fr;
+    }
+
+    &>div{
+      @media(min-width: $width-md-min){
+        &:nth-child(2n + 2){
+          position: relative;
+
+          &:before{
+            content: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.48437 0.707108L16.2626 8.48528L8.48438 16.2634L0.706202 8.48528L8.48437 0.707108Z' fill='%23121212' stroke='%23292929' /%3E%3Cpath d='M8.48437 3.55664L13.4341 8.50639L8.48437 13.4561L3.53463 8.50639L8.48437 3.55664Z' fill='%23E9A900' /%3E%3C/svg%3E");
+            position: absolute;
+            font-size: 0;
+            bottom: 0;
+            left: 0;
+            transform: translate3d(-50%, 50%, 0);
+            z-index: 1;
+          }
+        }
+      }
+    }
+
+    &-head{
+      font-weight: 400;
+      font-size: 24px;
+
+      &:nth-child(1){
+        padding: 24px 50px 24px 0;
+        border-right: 1px solid $line;
+
+        @media(max-width: $width-minlg){
+          padding: 20px 30px 20px 0;
+        }
+
+        @media(max-width: $width-md){
+          border-right: none;
+          padding: 32px 0 24px 0;
+        }
+      }
+      &:nth-child(2){
+        padding: 24px 0 24px 50px;
+
+        @media(max-width: $width-minlg){
+          padding: 20px 0 20px 30px;
+        }
+
+        @media(max-width: $width-md){
+          order: 1;
+          padding: 32px 0 24px 0;
+          position: relative;
+          border-top: 1px solid $line;
+
+          &:after,
+          &:before{
+            content: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.48437 0.707108L16.2626 8.48528L8.48438 16.2634L0.706202 8.48528L8.48437 0.707108Z' fill='%23121212' stroke='%23292929' /%3E%3Cpath d='M8.48437 3.55664L13.4341 8.50639L8.48437 13.4561L3.53463 8.50639L8.48437 3.55664Z' fill='%23E9A900' /%3E%3C/svg%3E");
+            position: absolute;
+            font-size: 0;
+            top: 0;
+            z-index: 1;
+          }
+
+          &:before{
+            left: 0;
+            transform: translate3d(-50%, -50%, 0);
+          }
+
+          &:after{
+            right: 0;
+            transform: translate3d(50%, -50%, 0);
+          }
+        }
+      }
+    }
+
+    &-col{
+      border-top: 1px solid $line;
+      border-bottom: 1px solid $line;
+
+      @media(max-width: $width-md){
+        border-top: none;
+        border-bottom: none;
+      }
+
+      &:nth-child(3){
+        padding: 32px 50px 32px 0;
+        border-right: 1px solid $line;
+
+        @media(max-width: $width-minlg){
+          padding: 20px 30px 20px 0;
+        }
+
+        @media(max-width: $width-md){
+          border-right: none;
+          padding: 0 0 32px 0;
+        }
+      }
+      &:nth-child(4){
+        padding: 32px 0 32px 50px;
+
+        @media(max-width: $width-minlg){
+          padding: 20px 0 20px 30px;
+        }
+
+        @media(max-width: $width-md){
+          order: 2;
+          padding: 0 0 0 0;
+        }
+      }
+    }
+  }
+
+  &--first{
+    backdrop-filter: blur(15.5px);
+    background: $black15;
+    border: 1px solid $line;
+    border-radius: 10px;
+    display: grid;
+    gap: 26px;
+    padding: 24px;
+
+    .vp-item{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &--index{
+        border: 1px solid $line;
+        border-radius: 50%;
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -1.5px;
+        line-height: 1;
+        color: $white30;
+      }
+
+      &--text{
+        font-weight: 300;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &--second{
+    display: grid;
+    gap: 16px;
+
+    .vp-item{
+      padding: 32px;
+      backdrop-filter: blur(15.5px);
+      background: $black15;
+      border: 1px solid $line;
+      border-radius: 10px;
+
+      &--text{
+        font-weight: 300;
+        font-size: 18px;
+        color: $white30;
+
+        p,h1,h2,h3,h4,h5,h6{
+          margin: 0 0 0 0;
+        }
+
+        b, strong{
+          color: $white;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

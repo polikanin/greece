@@ -1,0 +1,125 @@
+.vp-privacy-policy{
+  padding: 200px 0 40px 0;
+
+  @media(max-width: $width-sm){
+    padding: 140px 0 40px 0;
+  }
+
+  .vp-title{
+    margin-bottom: 64px;
+
+    @media(max-width: $width-sm){
+      margin-bottom: 32px;
+    }
+  }
+
+  .vp-subtitle{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  &--content{
+
+  }
+
+  &--text{
+    h1,h2,h3, h4{
+      font-weight: 400;
+      font-size: 24px;
+      margin: 32px 0 24px 0;
+      padding-left: 25px;
+      position: relative;
+
+      @media(max-width: $width-sm){
+        font-size: 20px;
+        margin: 24px 0 16px 0;
+      }
+
+      &:before{
+        content: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.48437 0.707108L16.2626 8.48528L8.48438 16.2634L0.706202 8.48528L8.48437 0.707108Z' fill='%23121212' stroke='%23292929' /%3E%3Cpath d='M8.48437 3.55664L13.4341 8.50639L8.48437 13.4561L3.53463 8.50639L8.48437 3.55664Z' fill='%23E9A900' /%3E%3C/svg%3E");
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    p{
+      font-weight: 300;
+      font-size: 18px;
+      margin: 16px 0;
+
+      @media(max-width: $width-sm){
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    }
+
+    ul{
+      margin: 16px 0;
+      padding: 0 0 0 23px;
+
+      li{
+        font-weight: 300;
+        font-size: 18px;
+        position: relative;
+        margin: 16px 0;
+
+        @media(max-width: $width-sm){
+          font-size: 16px;
+        }
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: -15px;
+          width: 4px;
+          height: 4px;
+          background-color: $white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &--table{
+    $self: &;
+
+    &-row{
+      display: grid;
+      grid-template-columns: 335px 1fr;
+      margin: 24px 0;
+
+      @media(max-width: $width-sm){
+        grid-template-columns: 200px 1fr;
+      }
+
+      @media(max-width: $width-min){
+        grid-template-columns: 120px 1fr;
+      }
+
+      &:first-child{
+        #{$self}-col{
+          border-bottom: 1px solid $white30;
+          font-weight: 500;
+          color: $gold;
+          padding: 16px 0 24px 0;
+        }
+      }
+    }
+
+    &-col{
+      font-weight: 300;
+      font-size: 18px;
+
+      @media(max-width: $width-sm){
+        font-size: 14px;
+      }
+
+      &:first-child{
+        padding-right: 10px;
+      }
+    }
+  }
+}
