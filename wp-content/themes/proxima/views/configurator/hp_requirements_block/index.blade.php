@@ -1,3 +1,5 @@
+@php( $items = ( empty( $items ) ? [] : $items ) )
+
 <div id="{{ $section_id }}"
      class="vp-requirements-block"
 >

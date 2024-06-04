@@ -1,3 +1,5 @@
+@php( $program = ( empty( $program ) ? [] : $program ) )
+
 <div id="{{ $section_id }}"
      class="vp-program-block"
 >
