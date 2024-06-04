@@ -10,3 +10,4 @@ Stack trace:
   thrown in C:\OpenServer\domains\greece\wp-content\themes\proxima\src\InitACF.php on line 63
 [31-May-2024 17:22:28 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\OpenServer\domains\greece\wp-includes\class-wp-recovery-mode-email-service.php on line 367
 [31-May-2024 17:22:28 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\OpenServer\domains\greece\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[04-Jun-2024 08:02:11 UTC] Cron reschedule event error for hook: wpseo_indexable_index_batch, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"fifteen_minutes","args":[],"interval":900}
