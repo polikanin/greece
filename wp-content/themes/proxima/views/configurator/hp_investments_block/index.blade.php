@@ -56,13 +56,15 @@
                     </div>
                 @endforeach
 
-                <div class="vp-item"
-                     @if($last_item_bg) style="background-image: url('{{ $last_item_bg['url'] }}')" @endif
-                >
-                    <div class="vp-item--btn">
-                        @include('components.button', ['button' => $last_item_link, 'iconImg' => 'export'])
+                @if($last_item_bg)
+                    <div class="vp-item"
+                         @if($last_item_bg) style="background-image: url('{{ $last_item_bg['url'] }}')" @endif
+                    >
+                        <div class="vp-item--btn">
+                            @include('components.button', ['button' => $last_item_link, 'iconImg' => 'export'])
+                        </div>
                     </div>
-                </div>
+                @endif
             </div>
         @endif
     </div>
