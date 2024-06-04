@@ -2717,7 +2717,7 @@ body .cky-accordion-header .cky-always-active {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  padding: 50px 0; }
+  padding: 50px 0 0 0; }
   @media (max-width: 768px) {
     .vp-successful-block {
       padding: 25px 0; } }
@@ -2744,7 +2744,7 @@ body .cky-accordion-header .cky-always-active {
             display: none; } }
   .vp-successful-block .vp-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 62px;
     margin-left: -16px;
     margin-right: -16px; }
@@ -5637,3 +5637,19 @@ body .cky-accordion-header .cky-always-active {
     @media (max-width: 1340px) {
       .vp-new-step-block .vp-last-slide {
         width: calc(100vw - 320px - 34px - 50px); } }
+
+.vp-bg-text-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0 100px 0;
+  overflow: hidden; }
+  .vp-bg-text-block .vp-text {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 32px; }
+  @media (max-width: 768px) {
+    .vp-bg-text-block {
+      padding: 25px 0; }
+      .vp-bg-text-block br {
+        display: none; } }

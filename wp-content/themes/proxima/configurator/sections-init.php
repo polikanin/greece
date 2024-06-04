@@ -19,6 +19,7 @@ $sections = [
             'hp_fund_slider_block',
             'hp_fund_steps_block',
             'hp_new_steps_block',
+            'hp_bg_text_block',
             'hp_testimonials_block',
             'hp_steps_block',
             'hp_successful_block',

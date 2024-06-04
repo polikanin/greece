@@ -1,0 +1,26 @@
+.vp-bg-text-block{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: $main-offset 0 100px 0;
+  $offset: 16px;
+  overflow: hidden;
+
+  .vp-title{
+
+  }
+
+  .vp-text{
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 32px;
+  }
+
+  @media(max-width: $width-sm){
+    padding: $main-sm-offset 0;
+
+    br{
+      display: none;
+    }
+  }
+}
