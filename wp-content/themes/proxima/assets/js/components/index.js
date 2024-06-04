@@ -6,6 +6,7 @@ import Button from "./Button/Button.vue";
 import Link from "./Link/Link.vue";
 import Dropdown from "./Dropdown/Dropdown.vue";
 import FundSlider from "./FundSlider/FundSlider.vue";
+import StepSlider from "./StepSlider/StepSlider.vue";
 import VerticalX3Slider from "./VerticalX3Slider/VerticalX3Slider.vue";
 import HorizontalX3Slider from "./HorizontalX3Slider/HorizontalX3Slider.vue";
 import HorizontalX3V2Slider from "./HorizontalX3V2Slider/HorizontalX3V2Slider.vue";
@@ -31,6 +32,7 @@ Components = {
         Vue.component('custom-scrollbar', CustomScrollbar)
         Vue.component('vertical-x3-slider', VerticalX3Slider)
         Vue.component('fund-slider', FundSlider)
+        Vue.component('step-slider', StepSlider)
         Vue.component('horizontal-x3-slider', HorizontalX3Slider)
         Vue.component('horizontal-x3-v2-slider', HorizontalX3V2Slider)
         Vue.component('vp-mask', MaskInput);

@@ -325,8 +325,8 @@ createApp({
             if (form.phone) {
                 result.push(
                     {
-                        name: "mobilephone",
-                        value: form.phoneCode + form.phone
+                        name: "phone",
+                        value: form.phone
                     },
                 )
             }
