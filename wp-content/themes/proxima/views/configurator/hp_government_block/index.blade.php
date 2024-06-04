@@ -6,7 +6,7 @@
     <div class="wrapper">
         @if($title)
             <h2 class="vp-title">
-                {{ $title }}
+                {!! $title !!}
             </h2>
         @endif
         @if($text)
@@ -34,6 +34,7 @@
                         @if($item['value'])
                             <div class="vp-item--title">
                                 {!! $item['value'] !!}
+                                <span>{!! $item['quote'] !!}</span>
                             </div>
                         @endif
                         @if($item['text'])

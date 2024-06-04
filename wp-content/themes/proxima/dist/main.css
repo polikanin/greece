@@ -4571,6 +4571,10 @@ body .cky-accordion-header .cky-always-active {
       @media (max-width: 960px) {
         .vp-government-block .vp-item--title {
           font-size: 32px; } }
+      .vp-government-block .vp-item--title span {
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--white-30); }
     .vp-government-block .vp-item--text {
       font-weight: 300;
       font-size: 16px; }
