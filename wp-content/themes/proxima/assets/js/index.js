@@ -410,9 +410,15 @@ createApp({
 
 
             // 4 step start
-            if (form.capability) {
-                rest += 'Do you have financial capability to support investment vehicles at €500,000? - '
-                rest += form.capability
+            if (form.capability && form.capability.length > 0) {
+                rest += '\n'
+                rest += 'What are your investment thresholds? - '
+                rest += '\n'
+                form.capability.forEach(item => {
+                    rest += ' - '
+                    rest += item
+                    rest += '\n'
+                })
                 rest += '\n'
                 rest += '\n'
             }
