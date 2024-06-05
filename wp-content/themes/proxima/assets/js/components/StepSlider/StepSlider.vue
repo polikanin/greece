@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="vp-fund-slide--slider" :id="id + '_slider_' + index">
+                <div class="vp-fund-slide--slider" v-show="!slide.special_design" :id="id + '_slider_' + index">
                     <swiper
                         v-if="isLoad"
                         :modules="modules"
@@ -111,8 +111,11 @@
                     </div>
                 </div>
 
-                <div class="vp-fund-slide--special-container" v-show="slide.special_design">
-                    <div class="vp-fund-slide--layout" v-html="slide['title']">
+                <div class="vp-fund-slide--special-container"
+                     v-show="slide.special_design"
+                     @click.prevent="openModal(slide['link']['url'])"
+                >
+                    <div class="vp-fund-slide--layout" v-html="slide['text']">
 
                     </div>
                     <div class="vp-fund-slide--img">

@@ -5456,11 +5456,13 @@ body .cky-accordion-header .cky-always-active {
     display: grid;
     grid-template-columns: 100%;
     gap: 8px; }
-    .vp-new-step-block .vp-fund-slide--special-container {
-      position: relative;
-      border-radius: 23px;
-      overflow: hidden;
-      height: 316px; }
+    .vp-new-step-block .vp-fund-slide--special {
+      cursor: pointer; }
+      .vp-new-step-block .vp-fund-slide--special-container {
+        position: relative;
+        border-radius: 23px;
+        overflow: hidden;
+        height: 666px; }
     .vp-new-step-block .vp-fund-slide--layout {
       position: absolute;
       top: 0;
@@ -5474,8 +5476,8 @@ body .cky-accordion-header .cky-always-active {
       padding: 15px;
       z-index: 2;
       background-color: rgba(0, 0, 0, 0.75);
-      font-weight: 300;
-      font-size: 18px; }
+      font-weight: 400;
+      font-size: 24px; }
     .vp-new-step-block .vp-fund-slide--img {
       position: absolute;
       top: 0;
