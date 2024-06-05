@@ -210,6 +210,10 @@
         border-radius: 23px;
         overflow: hidden;
         height: 666px;
+
+        @media(max-width: $width-maxsm){
+          height: 540px;
+        }
       }
     }
 
