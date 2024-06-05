@@ -60,7 +60,7 @@ window.defaultFields = {
     objectives: [],
     risk: '',
     investment: [],
-    capability: '',
+    capability: [],
     relocating: '',
     frameToInvestment: '',
 }
@@ -92,7 +92,7 @@ createApp({
                 objectives: [],
                 risk: '',
                 investment: [],
-                capability: '',
+                capability: [],
                 relocating: '',
                 frameToInvestment: '',
             },

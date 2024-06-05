@@ -67,27 +67,19 @@
             <div class="vp-form--grid-4x">
                 <div class="vp-form--box" :class="{'vp-form--box-error': v$.form.capability.$error}">
                     <div class="vp-form--box-title">
-                        Do you have financial capability<br>
-                        to support investment vehicles at<br>
-                        €500,000?
+                        What are your<br>
+                        investment thresholds?
                     </div>
-                    <label class="vp-radio">
-                        <input type="radio" value="Yes" name="capability" v-model="form.capability">
+
+                    <label class="vp-radio" v-for="item in fields.capability">
+                        <input type="radio" name="relocating" :value="item" v-model="form.capability">
                         <span class="vp-radio--box"></span>
-                        <span class="vp-radio--text">
-           Yes
-          </span>
-                    </label>
-                    <label class="vp-radio">
-                        <input type="radio" value="No" name="capability" v-model="form.capability">
-                        <span class="vp-radio--box"></span>
-                        <span class="vp-radio--text">
-           No
-          </span>
+                        <span class="vp-radio--text">${item}</span>
                     </label>
 
                     <div class="vp-error--msg" v-if="v$.form.capability.$error">${msg.capability}</div>
                 </div>
+
 
                 <div class="vp-form--box" :class="{'vp-form--box-error': v$.form.frameToInvestment.$error}">
                     <div class="vp-form--box-title">
@@ -104,7 +96,7 @@
 
                 <div class="vp-form--box" :class="{'vp-form--box-error': v$.form.relocating.$error}">
                     <div class="vp-form--box-title">
-                        Are you planning on relocating to Portugal?
+                        Are you planning on relocating to Greece?
                     </div>
 
                     <label class="vp-radio" v-for="item in fields.relocating">
