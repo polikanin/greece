@@ -188,7 +188,7 @@
                     </div>
 
                     <div class="vp-modal--label">
-                        What is the motivation behind obtaining the Portuguese Golden
+                        What is the motivation behind obtaining the Greek Golden Visa?
                         <span>* Choose one or more options</span>
                     </div>
 
@@ -281,29 +281,20 @@
 
             <transition>
                 <div class="vp-modal--body" v-show="step === 4">
-                    <div class="vp-modal--block" :class="{'vp-input--error': v$.quiz.capability.$error}">
-                        <div class="vp-modal--block-label">
-                            Do you have financial capability to support investment vehicles
-                            at €500,000?
-                        </div>
-                        <div class="vp-modal--block-container">
-                            <label class="vp-radio">
-                                <input type="radio" value="Yes" name="capability" v-model="quiz.capability">
-                                <span class="vp-radio--box"></span>
-                                <span class="vp-radio--text">Yes</span>
-                            </label>
-                            <label class="vp-radio">
-                                <input type="radio" value="No" name="capability" v-model="quiz.capability">
-                                <span class="vp-radio--box"></span>
-                                <span class="vp-radio--text">No</span>
-                            </label>
-                        </div>
-
-                        <div class="vp-error--msg" v-if="v$.quiz.capability.$error">{{ msg.capability }}</div>
+                    <div class="vp-modal--label">
+                        What are your investment thresholds?
                     </div>
+                    <div class="vp-modal--group" v-for="item in fields.capability">
+                        <label class="vp-radio">
+                            <input type="radio" name="relocating" :value="item" v-model="quiz.capability">
+                            <span class="vp-radio--box"></span>
+                            <span class="vp-radio--text">{{ item }}</span>
+                        </label>
+                    </div>
+                    <div class="vp-error--msg" v-if="v$.quiz.capability.$error">{{ msg.capability }}</div>
 
                     <div class="vp-modal--label">
-                        Are you planning on relocating to Portugal?
+                        Are you planning on relocating to Greece?
                     </div>
                     <div class="vp-modal--group" v-for="item in fields.relocating">
                         <label class="vp-radio">
