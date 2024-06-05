@@ -286,7 +286,7 @@
                     </div>
                     <div class="vp-modal--group" v-for="item in fields.capability">
                         <label class="vp-radio">
-                            <input type="radio" name="relocating" :value="item" v-model="quiz.capability">
+                            <input type="radio" name="capability" :value="item" v-model="quiz.capability">
                             <span class="vp-radio--box"></span>
                             <span class="vp-radio--text">{{ item }}</span>
                         </label>
