@@ -368,7 +368,7 @@ export default {
     props: ['isOpen', 'terms', 'privacy'],
     data() {
         return {
-            step: 0,
+            step: 4,
             selected: false,
             selectedTimeline: false,
             code: window.VpPhoneCode,

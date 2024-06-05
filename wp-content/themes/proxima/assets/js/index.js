@@ -410,15 +410,9 @@ createApp({
 
 
             // 4 step start
-            if (form.capability && form.capability.length > 0) {
-                rest += '\n'
+            if (form.capability) {
                 rest += 'What are your investment thresholds? - '
-                rest += '\n'
-                form.capability.forEach(item => {
-                    rest += ' - '
-                    rest += item
-                    rest += '\n'
-                })
+                rest += form.capability
                 rest += '\n'
                 rest += '\n'
             }
