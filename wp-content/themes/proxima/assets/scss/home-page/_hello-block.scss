@@ -219,7 +219,7 @@
   .vp-items{
     display: grid;
     grid-template-columns: max(330px);
-    gap: 38px;
+    gap: 10px;
     padding: 20px 20px 0 32px;
 
     .vp-item{
@@ -301,7 +301,7 @@
   &.type_2{
     #{$self}--col{
       &:nth-of-type(3){
-        padding: 20px 60px 40px 0;
+        padding: 20px 28px 40px 0;
 
         .vp-items{
           grid-template-columns: repeat(2, 1fr);

@@ -82,7 +82,7 @@
     &--title{
       font-weight: 400;
       font-size: 48px;
-      align-self: flex-end;
+      align-self: flex-start;
 
       @media(max-width: $width-minlg){
         font-size: 24px;
@@ -100,7 +100,7 @@
 
     &--text{
       font-weight: 300;
-      font-size: 18px;
+      font-size: 24px;
       display: flex;
       align-items: flex-end;
       height: calc(18px * 1.185 * 6);
@@ -222,6 +222,13 @@
             margin: 2px 20px;
           }
         }
+      }
+    }
+
+    &:nth-of-type(6){
+      .vp-item--index{
+        padding: 6px;
+        align-content: center;
       }
     }
   }
