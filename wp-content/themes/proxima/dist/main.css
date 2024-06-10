@@ -5492,6 +5492,10 @@ body .cky-accordion-header .cky-always-active {
         overflow: hidden;
         height: calc(100% - 60px);
         margin-top: 24px; }
+        @media (max-width: 660px) {
+          .vp-new-step-block .vp-fund-slide--special-container {
+            height: calc(100% - 20px);
+            margin-top: 0px; } }
     .vp-new-step-block .vp-fund-slide--layout {
       position: absolute;
       top: 0;
