@@ -418,7 +418,7 @@ return [
                     'placeholder' => '',
                     'maxlength' => '',
                     'rows' => 2,
-                    'new_lines' => '',
+                    'new_lines' => 'br',
                 ),
             ),
         ),
