@@ -197,6 +197,7 @@
     b, strong{
       font-weight: 300;
       position: relative;
+      display: inline-block;
 
       &:before{
         content: '';

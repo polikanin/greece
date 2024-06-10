@@ -1958,7 +1958,8 @@ body .cky-accordion-header .cky-always-active {
     margin-top: 25px; }
   .vp-hello-block .vp-title b, .vp-hello-block .vp-title strong {
     font-weight: 300;
-    position: relative; }
+    position: relative;
+    display: inline-block; }
     .vp-hello-block .vp-title b:before, .vp-hello-block .vp-title strong:before {
       content: '';
       position: absolute;
