@@ -39,6 +39,7 @@
 
     .swiper-wrapper{
       display: flex;
+      align-items: stretch;
 
       .swiper-slide{
         height: auto;
@@ -224,7 +225,7 @@
         margin-top: 24px;
 
         @media(max-width: $width-maxsm){
-          height: 540px;
+          //height: 540px;
         }
       }
     }
