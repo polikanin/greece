@@ -100,9 +100,9 @@
                     <div class="vp-footer--excerpt">
                         {!! $disclaimer_text !!}
                         <br>
-                        <a href="" @click.prevent="modal.id = '##disclamer'">
-                            Please read our full disclaimer.
-                        </a>
+{{--                        <a href="" @click.prevent="modal.id = '##disclamer'">--}}
+{{--                            Please read our full disclaimer.--}}
+{{--                        </a>--}}
                     </div>
                 </div>
             </div>
