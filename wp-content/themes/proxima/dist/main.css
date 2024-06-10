@@ -5385,7 +5385,8 @@ body .cky-accordion-header .cky-always-active {
         .vp-new-step-block .swiper:before {
           display: none; } }
     .vp-new-step-block .swiper .swiper-wrapper {
-      display: flex; }
+      display: flex;
+      align-items: stretch; }
       .vp-new-step-block .swiper .swiper-wrapper .swiper-slide {
         height: auto; }
   .vp-new-step-block .vp-subtitle {
@@ -5491,9 +5492,6 @@ body .cky-accordion-header .cky-always-active {
         overflow: hidden;
         height: calc(100% - 60px);
         margin-top: 24px; }
-        @media (max-width: 660px) {
-          .vp-new-step-block .vp-fund-slide--special-container {
-            height: 540px; } }
     .vp-new-step-block .vp-fund-slide--layout {
       position: absolute;
       top: 0;
