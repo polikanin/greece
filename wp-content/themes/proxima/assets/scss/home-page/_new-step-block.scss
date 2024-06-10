@@ -36,6 +36,14 @@
         display: none;
       }
     }
+
+    .swiper-wrapper{
+      display: flex;
+
+      .swiper-slide{
+        height: auto;
+      }
+    }
   }
 
   .vp-subtitle {
@@ -205,12 +213,15 @@
 
     &--special{
       cursor: pointer;
+      height: 100%;
+      display: block;
 
       &-container{
         position: relative;
         border-radius: 23px;
         overflow: hidden;
-        height: 666px;
+        height: calc(100% - 60px);
+        margin-top: 24px;
 
         @media(max-width: $width-maxsm){
           height: 540px;

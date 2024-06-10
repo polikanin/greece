@@ -5384,6 +5384,10 @@ body .cky-accordion-header .cky-always-active {
       @media (max-width: 660px) {
         .vp-new-step-block .swiper:before {
           display: none; } }
+    .vp-new-step-block .swiper .swiper-wrapper {
+      display: flex; }
+      .vp-new-step-block .swiper .swiper-wrapper .swiper-slide {
+        height: auto; }
   .vp-new-step-block .vp-subtitle {
     margin-top: 60px;
     font-weight: 300; }
@@ -5478,12 +5482,15 @@ body .cky-accordion-header .cky-always-active {
     grid-template-columns: 100%;
     gap: 8px; }
     .vp-new-step-block .vp-fund-slide--special {
-      cursor: pointer; }
+      cursor: pointer;
+      height: 100%;
+      display: block; }
       .vp-new-step-block .vp-fund-slide--special-container {
         position: relative;
         border-radius: 23px;
         overflow: hidden;
-        height: 666px; }
+        height: calc(100% - 60px);
+        margin-top: 24px; }
         @media (max-width: 660px) {
           .vp-new-step-block .vp-fund-slide--special-container {
             height: 540px; } }
