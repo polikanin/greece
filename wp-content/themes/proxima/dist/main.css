@@ -2016,8 +2016,7 @@ body .cky-accordion-header .cky-always-active {
       justify-content: space-between; }
       .vp-hello-block .vp-items-type_4 .vp-item--title {
         font-weight: 500;
-        font-size: 18px;
-        max-width: 170px; }
+        font-size: 18px; }
       .vp-hello-block .vp-items-type_4 .vp-item--text {
         font-weight: 300;
         font-size: 16px; }
@@ -2054,7 +2053,7 @@ body .cky-accordion-header .cky-always-active {
   .vp-hello-block.type_4 .vp-hello-block--col:nth-of-type(4) {
     padding: 40px 30px 40px 40px; }
 
-#no-mrb .vp-hello-block {
+#no-mrb {
   margin-bottom: 0; }
 
 .vp-advantages-block {
