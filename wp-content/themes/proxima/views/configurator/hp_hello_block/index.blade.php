@@ -173,7 +173,7 @@
                                             {{ $item['text'] }}
                                         </div>
                                         <div class="vp-item--title">
-                                            {{ $item['title'] }}
+                                            {!! $item['title'] !!}
                                         </div>
                                     </div>
                                 @endif
