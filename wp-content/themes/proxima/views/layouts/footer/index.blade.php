@@ -86,10 +86,10 @@
                 </div>
                 <div class="vp-footer--excerpt">
                     {!! $disclaimer_text !!}
-                    <br>
-                    <a href="" @click.prevent="modal.id = '##disclamer'">
-                        Please read our full disclaimer.
-                    </a>
+{{--                    <br>--}}
+{{--                    <a href="" @click.prevent="modal.id = '##disclamer'">--}}
+{{--                        Please read our full disclaimer.--}}
+{{--                    </a>--}}
                 </div>
             </div>
             <div class="vp-footer--col vp-show-sm">
@@ -99,7 +99,7 @@
                     </div>
                     <div class="vp-footer--excerpt">
                         {!! $disclaimer_text !!}
-                        <br>
+{{--                        <br>--}}
 {{--                        <a href="" @click.prevent="modal.id = '##disclamer'">--}}
 {{--                            Please read our full disclaimer.--}}
 {{--                        </a>--}}
