@@ -4212,6 +4212,9 @@ body .cky-accordion-header .cky-always-active {
       @media (max-width: 1279px) {
         .vp-compare-block .vp-item--country {
           font-size: 24px; } }
+      @media (max-width: 359px) {
+        .vp-compare-block .vp-item--country {
+          padding: 30px 0 0 0; } }
     .vp-compare-block .vp-item--price {
       font-size: 24px; }
       .vp-compare-block .vp-item--price span {
@@ -5558,7 +5561,7 @@ body .cky-accordion-header .cky-always-active {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000 100%); }
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000 115%); }
       .vp-new-step-block .vp-fund-slide--slider img {
         width: 100%;
         height: 210px;

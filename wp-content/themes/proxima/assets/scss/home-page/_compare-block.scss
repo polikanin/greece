@@ -125,6 +125,10 @@
       @media(max-width: $width-minlg){
         font-size: 24px;
       }
+
+      @media(max-width: $width-xs){
+        padding: 30px 0 0 0;
+      }
     }
 
     &--price{
