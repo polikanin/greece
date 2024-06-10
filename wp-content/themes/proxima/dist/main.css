@@ -2054,6 +2054,9 @@ body .cky-accordion-header .cky-always-active {
   .vp-hello-block.type_4 .vp-hello-block--col:nth-of-type(4) {
     padding: 40px 30px 40px 40px; }
 
+#no-mrb .vp-hello-block {
+  margin-bottom: 0; }
+
 .vp-advantages-block {
   overflow: hidden;
   padding: 50px 0; }
