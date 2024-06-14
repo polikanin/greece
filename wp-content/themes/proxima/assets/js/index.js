@@ -412,7 +412,7 @@ createApp({
             if (form.capability) {
                 result.push(
                     {
-                        name: "financial_capability_to_support_investment_vehicles_at_500_000",
+                        name: "financial_capability_to_support_investment_vehicles",
                         value: form.capability
                     },
                 )
@@ -433,6 +433,12 @@ createApp({
                     },
                 )
             }
+            result.push(
+                {
+                    name: "site_identifier",
+                    value: "Greece"
+                },
+            )
             // 4 step end
 
 
