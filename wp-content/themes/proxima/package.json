@@ -57,7 +57,7 @@
     "gulp-autoprefixer": "^9.0.0",
     "jquery": "^3.7.1",
     "scrollmagic": "^2.0.8",
-    "swiper": "^11.1.0",
+    "swiper": "^11.1.4",
     "vue": "^3.2.36",
     "vue-loader": "^17.0.1"
   }

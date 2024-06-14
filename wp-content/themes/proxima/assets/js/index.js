@@ -352,92 +352,98 @@ createApp({
 
             // 2 step start
             if (form.message) {
-                rest += 'Family composition of the applicants including age? - '
-                rest += form.message
-                rest += '\n'
+                result.push(
+                    {
+                        name: "family_composition_including_age",
+                        value: form.message
+                    },
+                )
             }
+
             if (form.timelineCode) {
-                rest += 'Time zone - ';
-                rest += form.timelineCode
-                rest += ' ';
-                rest += form.timelineCity
-                rest += '\n'
+                result.push(
+                    {
+                        name: "time_zone_or_locatio",
+                        value: form.timelineCode + ' ' + form.timelineCity
+                    },
+                )
             }
+
             if (form.motivation && form.motivation.length > 0) {
-                rest += '\n'
-                rest += 'What is the motivation behind obtaining the Portuguese Golden Visa: ';
-                rest += '\n'
-                form.motivation.forEach(item => {
-                    rest += ' - '
-                    rest += item
-                    rest += '\n'
-                })
-                rest += '\n'
+                result.push(
+                    {
+                        name: "motivation_behind_portuguese_golden",
+                        value: form.motivation.join(';')
+                    },
+                )
             }
             // 2 step end
 
 
             // 3 step start
             if (form.objectives && form.objectives.length > 0) {
-                rest += '\n'
-                rest += 'What are your objectives in regards to the investment vehicle chosen: '
-                rest += '\n'
-                form.objectives.forEach(item => {
-                    rest += ' - '
-                    rest += item
-                    rest += '\n'
-                })
-                rest += '\n'
+                result.push(
+                    {
+                        name: "objectives_in_regards_to_the_investment_vehicle",
+                        value: form.objectives.join(';')
+                    },
+                )
             }
             if (form.risk) {
-                rest += 'How would you describe your risk profile? - '
-                rest += form.risk
-                rest += '\n'
+                result.push(
+                    {
+                        name: "risk_profile",
+                        value: form.risk
+                    },
+                )
             }
             if (form.investment && form.investment.length > 0) {
-                rest += '\n'
-                rest += 'Preferred type of investment? - '
-                rest += '\n'
-                form.investment.forEach(item => {
-                    rest += ' - '
-                    rest += item
-                    rest += '\n'
-                })
-                rest += '\n'
-                rest += '\n'
+                result.push(
+                    {
+                        name: "preferred_type_of_investment",
+                        value: form.investment.join(';')
+                    },
+                )
             }
             // 3 step end
 
 
             // 4 step start
             if (form.capability) {
-                rest += 'What are your investment thresholds? - '
-                rest += form.capability
-                rest += '\n'
-                rest += '\n'
+                result.push(
+                    {
+                        name: "financial_capability_to_support_investment_vehicles_at_500_000",
+                        value: form.capability
+                    },
+                )
             }
             if (form.relocating) {
-                rest += 'Are you planning on relocating to Portugal? - '
-                rest += form.relocating
-                rest += '\n'
-                rest += '\n'
+                result.push(
+                    {
+                        name: "planning_on_relocating_to_portugal_",
+                        value: form.relocating
+                    },
+                )
             }
             if (form.frameToInvestment) {
-                rest += 'Time frame to investment? - '
-                rest += form.frameToInvestment
-                rest += '\n'
+                result.push(
+                    {
+                        name: "time_frame_to_investment",
+                        value: form.frameToInvestment
+                    },
+                )
             }
             // 4 step end
 
 
-            if (rest) {
-                result.push(
-                    {
-                        name: "information_data",
-                        value: rest
-                    },
-                )
-            }
+            // if (rest) {
+            //     result.push(
+            //         {
+            //             name: "information_data",
+            //             value: rest
+            //         },
+            //     )
+            // }
 
             return result;
         },
