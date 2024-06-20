@@ -1181,6 +1181,29 @@ a.vp-btn--simple {
     max-width: 860px; }
   .vp-modal--big .vp-modal--container {
     padding: 32px; }
+  .vp-modal--notice .vp-modal--wrapper {
+    max-width: 860px; }
+  .vp-modal--notice .vp-modal--container {
+    padding: 24px; }
+  .vp-modal--notice .vp-modal--header {
+    margin-bottom: 20px; }
+  .vp-modal--notice-close {
+    color: var(--gold);
+    cursor: pointer; }
+  .vp-modal--notice-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2; }
+  .vp-modal--notice-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.2; }
+    .vp-modal--notice-text p {
+      margin: 10px 0; }
+    .vp-modal--notice-text strong, .vp-modal--notice-text b {
+      font-weight: 500; }
+  .vp-modal--notice .vp-btn {
+    margin: 24px auto 0 auto; }
 
 .v-leave-to {
   position: absolute;

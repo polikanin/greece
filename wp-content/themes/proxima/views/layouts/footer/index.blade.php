@@ -224,6 +224,46 @@
     </template>
 </vp-modal>
 
+<vp-modal v-show="modal.id === '##notice'" class="vp-modal--notice" @close="closeNoticePopup">
+    @php($disclaimer_title = get_field('disclaimer_title', 'options'))
+    @php($disclaimer_subtitle = get_field('disclaimer_subtitle', 'options'))
+    @php($disclaimer_text = get_field('disclaimer_text', 'options'))
+    @php($disclaimer_list = get_field('disclaimer_list', 'options'))
+    <template #header>
+        <div class="vp-modal--header">
+            <h2 class="vp-modal--notice-title">
+                IMPORTANT UPDATE
+            </h2>
+
+            <div class="vp-modal--notice-close" @click="closeNoticePopup">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </template>
+    <template #body>
+        <div class="vp-modal--body">
+            <div class="vp-modal--notice-text">
+                <p>
+                    <strong>€500.000</strong> real estate option in highly sought after Athens, Thessaloniki, Mykonos, and Santorini and
+                    all islands with population over 3.100 will increase to €800.000
+                </p>
+                <p>
+                    <strong>€250.000</strong> real estate option in wider areas of Greece will increase to €400.000
+                </p>
+                <p>
+                    Investors may still secure residency under current legal framework if they pay a 10% deposit by 31
+                    August 2024, and finalize the investment by 31 December 2024
+                </p>
+            </div>
+
+            <vp-button @click="closeNoticePopup">Okay</vp-button>
+        </div>
+    </template>
+</vp-modal>
+
 <transition name="vp-menu-anim">
     <div class="vp-offcanvas" v-show="isMenu">
         <div class="vp-offcanvas--layout">

@@ -166,7 +166,6 @@ export default {
     mounted() {
         let self = this;
 
-        console.log(this.slides)
         if(window.innerWidth < 661){
             self.isMobile = true
         }

@@ -133,6 +133,10 @@ createApp({
     mounted() {
         let self = this;
 
+        if(!localStorage.dayChecking || (localStorage.dayChecking && localStorage.dayChecking !== self.getDateForNotice())){
+            self.modal.id = '##notice'
+        }
+
         const preloader = document.querySelector('.vp-preloader')
         const header = document.querySelector('.vp-header')
         const progress = document.querySelectorAll('[data-progress-container]')
@@ -236,6 +240,15 @@ createApp({
     },
     computed: {},
     methods: {
+        getDateForNotice() {
+            let date = new Date()
+            let dateStr = `${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`
+            return dateStr
+        },
+        closeNoticePopup() {
+            this.modal.id = false
+            localStorage.setItem('dayChecking', this.getDateForNotice())
+        },
         showMore() {
             this.isShowMore = true
         },
