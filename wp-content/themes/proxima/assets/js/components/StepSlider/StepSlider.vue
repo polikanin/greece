@@ -149,6 +149,7 @@ export default {
     props: ['slides', 'title', 'subtitle', 'link', 'id', 'isPagination'],
     data() {
         return {
+            blockWidth: window.innerWidth,
             isLoad: false,
             isMobile: false,
             modules: [Pagination, Navigation],
@@ -175,17 +176,21 @@ export default {
         }, 100)
 
         window.addEventListener('resize', function(){
-            self.isLoad = false
-            if(window.innerWidth < 661){
-                self.isMobile = true
-            }
-            else {
-                self.isMobile = false
-            }
+            if(self.blockWidth !== window.innerWidth){
+                self.blockWidth = window.innerWidth
 
-            setTimeout(function (){
-                self.isLoad = true
-            }, 100)
+                self.isLoad = false
+                if(window.innerWidth < 661){
+                    self.isMobile = true
+                }
+                else {
+                    self.isMobile = false
+                }
+
+                setTimeout(function (){
+                    self.isLoad = true
+                }, 100)
+            }
         })
     },
     methods: {

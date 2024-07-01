@@ -422,7 +422,7 @@ createApp({
 
 
             // 4 step start
-            if (form.capability) {
+            if (form.capability && form.capability.length > 0) {
                 result.push(
                     {
                         name: "financial_capability_to_support_investment_vehicles",
