@@ -160,11 +160,7 @@
   }
 
   &--group{
-    margin-bottom: 16px;
-
-    @media(max-width: $width-sm){
-      margin-bottom: 12px;
-    }
+    margin-bottom: 10px;
   }
 
   &--block{

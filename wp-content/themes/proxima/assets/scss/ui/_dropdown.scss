@@ -3,7 +3,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  height: 58px;
+  height: 45px;
   transition: 0.3s;
 
   @media(max-width: $width-sm){
@@ -30,10 +30,10 @@
     gap: 4px;
     min-height: 100%;
     cursor: pointer;
-    padding: 13px 36px 13px 16px;
+    padding: 6px 36px 6px 16px;
 
     @media(max-width: $width-sm){
-      padding: 13px 25px 13px 10px;
+      padding: 6px 25px 6px 10px;
       font-size: 14px;
       white-space: nowrap;
     }

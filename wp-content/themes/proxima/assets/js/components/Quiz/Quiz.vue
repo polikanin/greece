@@ -4,9 +4,7 @@
             <div class="vp-modal--header" v-show="step < 5">
                 <transition>
                     <div class="vp-modal--steps" v-show="step !== 0 && step < 5">
-                        <div class="vp-modal--step" :class="{active: step === 1, passed: step > 1}">01</div>
-                        <div class="vp-modal--step-line"></div>
-                        <div class="vp-modal--step" :class="{active: step === 2, passed: step > 2}">02</div>
+
                     </div>
                 </transition>
                 <div class="vp-modal--close" @click="close" v-show="step !== 0">
@@ -82,21 +80,6 @@
                         <div class="vp-error--msg" v-if="v$.quiz.timelineCity.$error">{{ msg.timelineCity }}</div>
                     </div>
 
-                    <div class="vp-modal--navigation">
-                        <!--                        <vp-button btn-class="vp-btn&#45;&#45;simple" @click="stepBack">-->
-                        <!--                            <vp-icon type="arrow-prev"></vp-icon>-->
-                        <!--                            <span class="vp-btn&#45;&#45;text">Go Back</span>-->
-                        <!--                        </vp-button>-->
-                        <vp-button @click="submitStep">
-                            <span class="vp-btn--text">Next Step</span>
-                            <vp-icon type="arrow-next"></vp-icon>
-                        </vp-button>
-                    </div>
-                </div>
-            </transition>
-
-            <transition>
-                <div class="vp-modal--body" v-show="step === 2">
                     <div class="vp-modal--label">
                         I have the financial capability to invest a minimum of €400,000 or €800,000 plus necessary fees.
                     </div>
@@ -117,22 +100,6 @@
 
                         <div class="vp-error--msg" v-if="v$.quiz.message.$error">{{ msg.message }}</div>
                     </div>
-
-                    <div class="vp-modal--label">
-                        What is the motivation behind obtaining the Greek Golden Visa?
-                        <span>* Choose one or more options</span>
-                    </div>
-
-                    <div class="vp-modal--group" v-for="item in fields.motivation">
-                        <label class="vp-checkbox">
-                            <input type="checkbox"
-                                   :value="item"
-                                   v-model="quiz.motivation">
-                            <span class="vp-checkbox--box"></span>
-                            <span class="vp-checkbox--text">{{ item }}</span>
-                        </label>
-                    </div>
-                    <div class="vp-error--msg" v-if="v$.quiz.motivation.$error">{{ msg.motivation }}</div>
 
                     <div class="vp-modal--label">
                         What is your preferred type of investment?
@@ -166,12 +133,12 @@
                     <div class="vp-error--msg" v-if="v$.quiz.frameToInvestment.$error">{{ msg.frameToInvestment }}</div>
 
                     <div class="vp-modal--navigation">
-                        <vp-button btn-class="vp-btn--simple" @click="stepBack">
-                            <vp-icon type="arrow-prev"></vp-icon>
-                            <span class="vp-btn--text">Go Back</span>
-                        </vp-button>
+                        <!--                        <vp-button btn-class="vp-btn&#45;&#45;simple" @click="stepBack">-->
+                        <!--                            <vp-icon type="arrow-prev"></vp-icon>-->
+                        <!--                            <span class="vp-btn&#45;&#45;text">Go Back</span>-->
+                        <!--                        </vp-button>-->
                         <vp-button @click="submitStep">
-                            <span class="vp-btn--text">Next Step</span>
+                            <span class="vp-btn--text">Send</span>
                             <vp-icon type="arrow-next"></vp-icon>
                         </vp-button>
                     </div>
@@ -179,7 +146,7 @@
             </transition>
 
             <transition>
-                <div class="vp-modal--body" v-show="step === 3">
+                <div class="vp-modal--body" v-show="step === 2">
                     <h2 class="vp-modal--heading">
                         Thank you!
                     </h2>
@@ -262,8 +229,7 @@ export default {
                 frameToInvestment: {required},
             },
             $validationGroups: {
-                step_1: ['quiz.firstName', 'quiz.lastName', 'quiz.email', 'quiz.phone', 'quiz.timelineCity'],
-                step_2: ['quiz.capability', 'quiz.message', 'quiz.motivation', 'quiz.investment', 'quiz.frameToInvestment'],
+                step_1: ['quiz.firstName', 'quiz.lastName', 'quiz.email', 'quiz.phone', 'quiz.timelineCity', 'quiz.capability', 'quiz.message', 'quiz.investment', 'quiz.frameToInvestment'],
             }
         }
     },
