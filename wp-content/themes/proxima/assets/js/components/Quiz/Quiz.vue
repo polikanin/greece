@@ -2,11 +2,8 @@
     <vp-modal v-show="isOpen">
         <template #header>
             <div class="vp-modal--header" v-show="step < 5">
-                <transition>
-                    <div class="vp-modal--steps" v-show="step !== 0 && step < 5">
+                <h3>Let us help you to providing following information</h3>
 
-                    </div>
-                </transition>
                 <div class="vp-modal--close" @click="close" v-show="step !== 0">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-linecap="round"
@@ -91,7 +88,7 @@
                         </label>
                     </div>
                     <div class="vp-error--msg" v-if="v$.quiz.capability.$error">{{ msg.capability }}</div>
-
+                    <br>
                     <div class="vp-modal--group">
               <textarea class="vp-textarea"
                         v-model="quiz.message"
@@ -132,6 +129,10 @@
                     </div>
                     <div class="vp-error--msg" v-if="v$.quiz.frameToInvestment.$error">{{ msg.frameToInvestment }}</div>
 
+                    <p>
+                        By submitting the form you agree to be contacted by our advisor and you agree to the Terms and Conditions and Privacy Policy.
+                    </p>
+
                     <div class="vp-modal--navigation">
                         <!--                        <vp-button btn-class="vp-btn&#45;&#45;simple" @click="stepBack">-->
                         <!--                            <vp-icon type="arrow-prev"></vp-icon>-->
@@ -148,7 +149,7 @@
             <transition>
                 <div class="vp-modal--body" v-show="step === 2">
                     <h2 class="vp-modal--heading">
-                        Thank you!
+                        Your form has been successfully submitted.
                     </h2>
 
                     <div class="vp-modal--text">
