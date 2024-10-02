@@ -77,6 +77,15 @@
                         <div class="vp-error--msg" v-if="v$.quiz.timelineCity.$error">{{ msg.timelineCity }}</div>
                     </div>
 
+                    <div class="vp-modal--group">
+              <textarea class="vp-textarea"
+                        v-model="quiz.message"
+                        :class="{'vp-textarea--error': v$.quiz.message.$error}"
+                        placeholder="Family composition of the applicants including age?"></textarea>
+
+                        <div class="vp-error--msg" v-if="v$.quiz.message.$error">{{ msg.message }}</div>
+                    </div>
+
                     <div class="vp-modal--label">
                         I have the financial capability to invest a minimum of €400,000 or €800,000 plus necessary fees.
                     </div>
@@ -88,15 +97,6 @@
                         </label>
                     </div>
                     <div class="vp-error--msg" v-if="v$.quiz.capability.$error">{{ msg.capability }}</div>
-                    <br>
-                    <div class="vp-modal--group">
-              <textarea class="vp-textarea"
-                        v-model="quiz.message"
-                        :class="{'vp-textarea--error': v$.quiz.message.$error}"
-                        placeholder="Family composition of the applicants including age?"></textarea>
-
-                        <div class="vp-error--msg" v-if="v$.quiz.message.$error">{{ msg.message }}</div>
-                    </div>
 
                     <div class="vp-modal--label">
                         What is your preferred type of investment?
